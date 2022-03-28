@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    width: 100%
+}
+
+main {
+    margin-top: 7em;
+}
+
+.container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#blog-list {
+    text-align: left;
+}
+
+#blog-list h2 {
+    text-align: left;
+}
