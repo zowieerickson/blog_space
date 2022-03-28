@@ -5,9 +5,11 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
         let html = "";
         postsArr.forEach(post => {
             html += `
-            <h2>${post.title}</h2>
-            <p>${post.body}</p>
-            <hr />
+            <div>
+                <h2>${post.title}</h2>
+                <p>${post.body}</p>
+                <hr />
+            </div>
             `
         }) 
         document.querySelector("#blog-list").innerHTML = html

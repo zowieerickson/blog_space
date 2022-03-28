@@ -14,6 +14,11 @@ hr {
     width: 100%;
 }
 
+header {
+    margin-bottom: 7em;
+
+}
+
 .navbar {
     overflow: hidden;
     position: fixed;
@@ -27,8 +32,8 @@ h1 a {
     text-decoration: none;
 }
 
-main {
-    margin-top: 7em;
+.main {
+    padding: 0 15px
 }
 
 .container {
@@ -46,4 +51,19 @@ main {
 
 #blog-list h2 {
     text-align: left;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input#post-title, textarea#post-body {
+    margin: 7px 0;
+}
+
+button {
+    padding: 7px;
+    cursor: pointer;
 }
