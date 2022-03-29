@@ -14,3 +14,17 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
         }) 
         document.querySelector("#blog-list").innerHTML = html
     })
+
+let postArray = [];
+
+document.querySelector("#post-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const postTitle = document.querySelector("#post-title").value
+    const postBody = document.querySelector("#post-body").value
+    postArray.push({
+        title: postTitle,
+        body: postBody
+    })
+    console.log(postArray)
+    
+})
