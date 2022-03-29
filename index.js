@@ -1,4 +1,5 @@
 let postsArray = [];
+const form = document.querySelector("#post-form")
 
 function renderPosts() {
     let html = "";
@@ -22,7 +23,7 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
     })
 
     
-    document.querySelector("#post-form").addEventListener("submit", (e) => {
+    form.addEventListener("submit", (e) => {
         e.preventDefault();
         const postTitle = document.querySelector("#post-title").value
         const postBody = document.querySelector("#post-body").value
@@ -42,6 +43,7 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
         .then(data => {
             postsArray.unshift(data)
             renderPosts()
+            form.reset()
         })
     
 })
